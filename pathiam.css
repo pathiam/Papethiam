@@ -30,13 +30,13 @@ main div{
 	display: grid;
 	font-weight: bolder;
 	padding: 2rem;
-	
+	overflow: hidden;
 }
 .grid div p{
 	font-weight: normal;
 	font-size: 2rem;
 	padding: 2rem;
-
+	overflow: hidden;
 }
 header{
 	background-image: url("font.jpeg");
@@ -138,7 +138,7 @@ article{
 	font-weight: normal;
 	font-size: 1.2rem;
 	padding: 1.5rem;
-
+	overflow: hidden;
 }
 header i{
 	padding: 1rem;
@@ -147,7 +147,7 @@ header i{
 }
 
 .grid div p{
-
+	overflow: hidden;
 	font-size: 1.2rem;
 	
 }
@@ -172,6 +172,7 @@ main div {
     display: grid;
     font-weight: bolder;
     padding: 0rem;
+	overflow: hidden;
 }
 .name {
     font-weight: bold;
@@ -207,6 +208,12 @@ header div {
     justify-content: right;
     margin-right: 15%;
     margin: 3rem;
+}
+.grid div {
+	overflow: hidden;
+}
+	.grid div p{
+	overflow: hidden;
 }
 footer {
     padding: 1rem;
