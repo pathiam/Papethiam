@@ -112,3 +112,122 @@ footer  p{
 	justify-content: center;
 	padding: 2rem;
 }
+@media screen and (max-width:758px){
+	main{
+		width: 100%;
+	}
+	body{
+	margin: 0;
+	padding: 0;
+	font-size: 1.5rem;
+	width: 100%;
+}
+header div{
+	padding: 1rem;
+	transition: 0.6s ease;
+	justify-content: right;
+	margin-right: 15%;
+	margin: 4rem;
+}
+article{
+	width: 100%;
+	height: 1.5rem;
+	background-color: darkturquoise;
+}
+.grid div p{
+	font-weight: normal;
+	font-size: 1.2rem;
+	padding: 1.5rem;
+
+}
+header i{
+	padding: 1rem;
+	font-size: x-large;
+	color: white;
+}
+
+.grid div p{
+
+	font-size: 1.2rem;
+	
+}
+footer{
+	padding: 2rem;
+	background-image: url("font.jpeg");
+}
+footer  p{
+	background-color: darkturquoise;
+	font-size: 1rem;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+}
+main div {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.grid div {
+    background-color: darkturquoise;
+    display: grid;
+    font-weight: bolder;
+    padding: 0rem;
+}
+.name {
+    font-weight: bold;
+    font-size: large;
+    color: #ffffff;
+}
+.function {
+    font-size: x-small;
+    color: darkturquoise;
+    font-size: 1.5rem;
+}
+} 
+@media screen and (max-width:500px){
+
+.name {
+    font-weight: bold;
+    font-size: revert;
+    color: #ffffff;
+}
+.function {
+    font-size: x-small;
+    color: darkturquoise;
+    font-size: 0.7rem;
+}
+header i {
+    padding: 1rem;
+    font-size: large;
+    color: white;
+}
+header div {
+    padding: 1rem;
+    transition: 0.6s ease;
+    justify-content: right;
+    margin-right: 15%;
+    margin: 3rem;
+}
+footer {
+    padding: 1rem;
+    background-image: url("font.jpeg");
+}
+footer p {
+    background-color: darkturquoise;
+    font-size: 0.75rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+        column-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 2px;
+    padding: 2px;
+    grid-column-gap: 15px;
+        column-gap: 15px;
+}
+}
