@@ -1,0 +1,230 @@
+html{
+    font-family: calibri ;
+    font-size: 62.5%; /* Pour fixer 1rem = 10px */
+    padding : 0 ; /* Pas de marge intérieure */
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 2rem;	
+}
+
+main div{
+	
+	display: flex;
+	justify-content: center;
+	padding: 3rem;
+}
+.grid{
+	display: grid;
+  	grid-template-columns: repeat(3, 1fr);
+  	grid-gap: 10px;
+ 	grid-auto-rows: minmax(100px, auto);
+ 	margin: 5px;
+ 	padding: 5px;
+ 	grid-column-gap: 50px;
+}
+.grid div{
+	background-color: darkturquoise;
+	display: grid;
+	font-weight: bolder;
+	padding: 2rem;
+	
+}
+.grid div p{
+	font-weight: normal;
+	font-size: 2rem;
+	padding: 2rem;
+
+}
+header{
+	background-image: url("font.jpeg");
+	background-size: cover; /* L'image s'étend sur pour couvrir tout le fond du header */ 
+    background-position: 0% 65% ; /* Décalage vers le bas pour que les titres s'affichent dans le ciel */
+    min-height : 30vw ; /* Hauteur minimale : 45% de la largeur */
+    position: static;
+    display: flex;
+    align-items: center;
+}
+article{
+	width: 100%;
+	height: 2rem;
+	background-color: darkturquoise;
+}
+header div{
+	padding: 1rem;
+	transition: 0.6s ease;
+	justify-content: right;
+	margin-right: 15%;
+	margin: 5rem;
+}
+header img{
+	width: 25%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 5%;
+}
+header i{
+	padding: 1rem;
+	font-size: xxx-large;
+	color: white;
+}
+header i:hover{
+	color: red;
+}
+.tire{
+	font-weight: bolder;
+	animation-duration: 3s;
+	animation-name: slidein;
+	background-color: whitesmoke;
+	margin: 3rem;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.name{
+	font-weight: bold;
+	font-size: xx-large;
+	color: #ffffff;
+}
+.function{
+	font-size: x-small;
+	color: darkturquoise;
+	font-size: 2rem;
+}
+footer{
+	padding: 8rem;
+	background-image: url("font.jpeg");
+}
+footer  p{
+	background-color: darkturquoise;
+	font-size: large;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+}
+@media screen and (max-width:758px){
+
+	body{
+	margin: 0;
+	padding: 0;
+	font-size: 1.5rem;
+	
+}
+header div{
+	padding: 1rem;
+	transition: 0.6s ease;
+	justify-content: right;
+	margin-right: 15%;
+	margin: 4rem;
+}
+.trait{
+	width: 100%;
+	height: 1.5rem;
+	background-color: darkturquoise;
+}
+.grid div p{
+	font-weight: normal;
+	font-size: 1.2rem;
+	padding: 1.5rem;
+
+}
+header i{
+	padding: 1rem;
+	font-size: x-large;
+	color: white;
+}
+
+.grid div p{
+
+	font-size: 1.2rem;
+	
+}
+footer{
+	padding: 2rem;
+	background-image: url("font.jpeg");
+}
+footer  p{
+	background-color: darkturquoise;
+	font-size: 1rem;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+}
+main div {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.grid div {
+    background-color: darkturquoise;
+    display: grid;
+    font-weight: bolder;
+    padding: 0rem;
+}
+.name {
+    font-weight: bold;
+    font-size: large;
+    color: #ffffff;
+}
+.function {
+    font-size: x-small;
+    color: darkturquoise;
+    font-size: 1.5rem;
+}
+} 
+@media screen and (max-width:700px){
+
+.name {
+    font-weight: bold;
+    font-size: revert;
+    color: #ffffff;
+}
+.function {
+    font-size: x-small;
+    color: darkturquoise;
+    font-size: 0.7rem;
+}
+header i {
+    padding: 1rem;
+    font-size: large;
+    color: white;
+}
+header div {
+    padding: 1rem;
+    transition: 0.6s ease;
+    justify-content: right;
+    margin-right: 15%;
+    margin: 3rem;
+}
+footer {
+    padding: 1rem;
+    background-image: url("font.jpeg");
+}
+footer p {
+    background-color: darkturquoise;
+    font-size: 0.75rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+        column-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 2px;
+    padding: 2px;
+    grid-column-gap: 15px;
+        column-gap: 15px;
+}
+}
